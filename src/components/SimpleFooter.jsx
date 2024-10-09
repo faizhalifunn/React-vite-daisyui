@@ -1,29 +1,14 @@
     import React from 'react';
+    import "../app.css"
 
     function Footer() {
     return (
-        <footer style={footerStyle}>
-        <p>&copy; {new Date().getFullYear()} Create by Puna, Still in development</p>
-        </footer>
+    <footer className="footer footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by Puna</p>
+        </aside>
+    </footer>
     );
     }
-
-    const footerStyle = {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: '#333',
-    color: '#fff',
-    position: 'absolute',
-    width: '100%',
-    bottom: 0,
-    };
-
-    const navStyle = {
-    listStyle: 'none',
-    padding: 0,
-    margin: '10px 0 0 0',
-    display: 'flex',
-    justifyContent: 'center',
-    };
 
     export default Footer;
